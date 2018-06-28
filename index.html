@@ -1,6 +1,9 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
+	<link rel="stylesheet" href="css/Sakura.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/Sakura.js"></script>
     <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0" />
     <style type="text/css">
         h1 {
@@ -21,8 +24,22 @@
 </head>
     
 <body style="background:url(Tutorial/background.jpg); background-size:cover;">
-
-    <h1>Welcome</h1>
+	<div class="cherry">
+		<img id="Sakura" src="Tutorial/Sakura.png" alt="" >
+	</div>
+	<script>
+		$(function(){
+			$('.cherry').Cherry_Blossoms({
+				is_Cherry:true,//是否生成樱花
+				image_min:10,//花瓣最小宽度和高度
+				image_max:50,//花瓣最大宽度和高度
+				time_min:10000,//花瓣最快下坠时间
+				time_max:20000,//花瓣最慢下坠时间
+				interval:500//花瓣生成时间间隔
+			})
+		})
+	</script>
+    <h1>欢迎光临</h1>
     <center>
         <button type="button" id="Bilibili" onclick="location.href ='http://www.bilibili.com'">
             哔哩哔哩
