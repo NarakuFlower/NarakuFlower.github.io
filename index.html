@@ -24,6 +24,7 @@
 		<img id="Sakura" src="Tutorial/Images/Sakura.png" alt="" >
 	</div>
 	<script>
+	var x = document.getElementById("bgm"); 
 		$(function(){
 			$('.cherry').Cherry_Blossoms({
 				is_Cherry:true,//是否生成樱花
@@ -34,8 +35,12 @@
 				interval:500//花瓣生成时间间隔
 			})
 		})
+			
+	
+	$ (this).click(function play(){
+		bgm.play();
+	});
 	</script>
-
 	    <h1 font = "Microsoft Yahei">欢迎光临</h1>
 	<div class=buttons>
     <center>	
@@ -71,13 +76,6 @@
 		<source src="Tutorial/Audios/bgm.mp3" type="audio/mp3">
 		<source src="Tutorial/Audios/bgm.ogg" type="audio/ogg">
 	</audio>
-	<script>
-	var x = document.getElementById("bgm"); 
-	$(this).click(function(){
-		bgm.play();
-	});
-		
-	</script>
 </body>
 <footer>
 	<p>Posted by: 紫月流觞</p>
