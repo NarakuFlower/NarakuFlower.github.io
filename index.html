@@ -67,11 +67,17 @@
             玩个游戏？
     </button>
 
-    <audio controls="controls" autoplay="autoplay">
+    <audio id="bgm" autoplay="autoplay" loop>
 		<source src="Tutorial/Audios/bgm.mp3" type="audio/mp3">
 		<source src="Tutorial/Audios/bgm.ogg" type="audio/ogg">
 	</audio>
-
+	<script>
+	var x = document.getElementById("bgm"); 
+	$(this).click(function(){
+		bgm.play();
+	});
+		
+	</script>
 </body>
 <footer>
 	<p>Posted by: 紫月流觞</p>
