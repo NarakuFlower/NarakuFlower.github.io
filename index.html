@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
+	<script src="js/BlockBlaster.js"></script> 	
 	<link rel="stylesheet" href="css/Sakura.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="js/Sakura.js"></script>
@@ -68,6 +69,27 @@
         </button>
     </center>
 	</div>
+	<h1>或者:</h1>
+	<button onMouseOver=" this.style.color='#66CCFF'" onMouseOut="this.style.color='White'" type="button" id="playGame" onclick="startgame()">
+			玩个游戏？
+    </button>
+	<canvas id="canvas" width="800" height="600">。。。</canvas>
+	<script>
+	var count = '0';
+	function startgame(){
+		if(count='0'){
+			playGame.value = '关闭游戏';
+			count='1';
+			canvas.width="800";
+			canvas.height="600";
+		}else{
+			count='0';
+			playGame.value='玩个游戏？';
+			canvas.width="0";
+			canvas.height="0";
+		}
+	}
+	</script>
 </body>
 <footer>
   <p>Posted by: 紫月流觞</p>
