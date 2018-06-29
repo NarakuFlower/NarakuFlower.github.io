@@ -46,7 +46,7 @@ $(function() {
                     console.log(time);
                     image_daxiao = randomNum(par.image_min, par.image_max);
                     console.log(image_daxiao);
-                    $('#Sakura:last-child').after('<img id="Sakura" src="Tutorial/Sakura.png" alt="">');
+                    $('#Sakura:last-child').after('<img id="Sakura" src="Tutorial/Images/Sakura.png" alt="">');
                     $('#Sakura:last-child').css({
                         'margin-left': margin_left + '%',
                         'width': image_daxiao + 'px',

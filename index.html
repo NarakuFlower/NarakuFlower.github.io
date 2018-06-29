@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-	<script src="js/BlockBlaster.js"></script> 	
+	
 	<link rel="stylesheet" href="css/Sakura.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="js/Sakura.js"></script>
@@ -32,9 +32,9 @@
     </style>
 </head>
     
-<body style="background:url(Tutorial/background.jpg); background-size:cover;background-repeat:no-repeat;background-clip:border-box">
+<body style="background:url(Tutorial/Images/background.jpg); background-size:cover;background-repeat:no-repeat;background-clip:border-box">
 	<div class="cherry">
-		<img id="Sakura" src="Tutorial/Sakura.png" alt="" >
+		<img id="Sakura" src="Tutorial/Images/Sakura.png" alt="" >
 	</div>
 	<script>
 		$(function(){
@@ -69,29 +69,24 @@
         </button>
     </center>
 	</div>
-	<h1>或者:</h1>
-	<button onMouseOver=" this.style.color='#66CCFF'" onMouseOut="this.style.color='White'" type="button" id="playGame" onclick="startgame()">
-			玩个游戏？
-    </button>
-	<canvas id="canvas" width="800" height="600">。。。</canvas>
-	<script>
-	var count = '0';
-	function startgame(){
-		if(count='0'){
-			playGame.value = '关闭游戏';
-			count='1';
-			canvas.width="800";
-			canvas.height="600";
-		}else{
-			count='0';
-			playGame.value='玩个游戏？';
-			canvas.width="0";
-			canvas.height="0";
-		}
-	}
+	<div style="position:fixed;right:0.5%;bottom:0.5%">
+		<audio id="bgm" controls="controls" autoplay="autoplay" preload="metadata" loop>
+			<source src="Tutorial/Audios/bgm.mp3" type="audio/mp3"/>
+			<source src="Tutorial/Audios/bgm.ogg" type="audio/ogg"/>
+		</audio>
+	</div>
+	<script type="text/javascript">
+		var audioEle = document.getElementById("bgm");
+		function playPause(){
+        if(audioEle.paused){
+            audioEle.play();
+        }else{
+            audioEle.pause();
+        }
+    }
 	</script>
 </body>
 <footer>
-  <p>Posted by: 紫月流觞</p>
-  <p>Contact information: <a href="mailto:1282132147@qq.com">1282132147@qq.com</a>.</p>
+	<p>Posted by: 紫月流觞</p>
+	<p>Contact information: <a href="mailto:1282132147@qq.com">1282132147@qq.com</a>.</p>	
 </footer></html>
