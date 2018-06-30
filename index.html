@@ -20,7 +20,7 @@
 	</style>
 </head>
     
-<body style="background:url(Tutorial/Images/background.jpg); center;background-size:100% auto;background-repeat:no-repeat;background-clip:border-box">
+<body  style="background:url(Tutorial/Images/background.jpg); center;background-size:100% auto;background-repeat:no-repeat;background-clip:border-box">
 	<div class="cherry">
 		<img id="Sakura" src="Tutorial/Images/Sakura.png" alt="" >
 	</div>
@@ -34,37 +34,22 @@
 				image_max:50,//花瓣最大宽度和高度
 				time_min:10000,//花瓣最快下坠时间
 				time_max:20000,//花瓣最慢下坠时间
-				interval:500//花瓣生成时间间隔
+				interval:400//花瓣生成时间间隔
 			})
 		})
-	$ (this).click(function play(){
-		if(x==false){
-			bgm.play();
-			x=true;
-		}else{
-			bgm.pause();
-			x=false;
-		}
-	});
+	$ (this).click(function play(){bgm.play();});
+	
 	</script>
 	    <h1 font = "Microsoft Yahei">欢迎光临</h1>
 	<div class=buttons>
     <center>	
 		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="60%" color='#66CCFF' SIZE=3>
-        <button onMouseOver=" this.style.color='#66CCFF'" onMouseOut="this.style.color='White'" type="button" id="Bilibili" onclick="location.href ='http://www.bilibili.com'">
+        <button onMouseOver=" this.style.color='#66CCFF'" onMouseOut="this.style.color='White'" type="button" id="Bilibili" onclick="location.href ='https://space.bilibili.com/3068039/#/">
             哔哩哔哩
         </button>
         <br>
-        <button onMouseOver=" this.style.color='#66CCFF'" onMouseOut="this.style.color='White'" type="button" id="Github" onclick="location.href ='http://www.github.com'">
+        <button onMouseOver=" this.style.color='#66CCFF'" onMouseOut="this.style.color='White'" type="button" id="Github" onclick="location.href ='https://github.com/NarakuFlower'">
             Github
-        </button>
-        <br>
-        <button onMouseOver=" this.style.color='#66CCFF'" onMouseOut="this.style.color='White'" type="button" id="BaiduTranslate" onclick="location.href ='http://fanyi.baidu.com/?aldtype=16047#auto/zh'">
-            百度翻译
-        </button>
-        <br>
-        <button onMouseOver=" this.style.color='#66CCFF'" onMouseOut="this.style.color='White'" type="button" id="Wikipedia" onclick="location.href ='https://en.wikipedia.org/wiki/Main_Page'">
-            维基英文
         </button>
     </center>
 	</div>
@@ -86,4 +71,5 @@
 <footer>
 	<p>Posted by: 紫月流觞</p>
 	<p>Contact information: <a href="mailto:1282132147@qq.com">1282132147@qq.com</a>.</p>	
-</footer></html>
+</footer>
+</html>
