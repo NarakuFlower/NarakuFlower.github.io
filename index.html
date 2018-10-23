@@ -25,6 +25,18 @@
 </head>
     
 <body  style="background:url(Tutorial/Images/background.jpg); center;background-size:100% auto;background-repeat:no-repeat;background-clip:border-box">
+	<script>
+		$eleHomework.click(function(){
+            var $eleForm = $("<form method='get'></form>");
+
+            $eleForm.attr("action","/Tutorial/Homework/homework.zip");
+
+            $(document.body).append($eleForm);
+
+            //提交表单，实现下载
+            $eleForm.submit();
+        });
+	</script>
 	<center>
 	    <h1 font = "Microsoft Yahei">欢迎光临</h1>
 		<div class="buttons">
@@ -33,7 +45,7 @@
             	小树苗中小学生教育系统
         	</button>
         	<br>
-        	<button onMouseOver=" this.style.color='#66CCFF'" onMouseOut="this.style.color='Black'" type="button" id="Homework" onclick="location.href ='download.html'">
+        	<button onMouseOver=" this.style.color='#66CCFF'" onMouseOut="this.style.color='Black'" type="button" id="Homework" >
             	下载项目管理D组作业
         	</button>
     	</div>
