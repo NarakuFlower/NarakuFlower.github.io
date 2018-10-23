@@ -28,12 +28,8 @@
 	<script>
 		$eleHomework.click(function(){
             var $eleForm = $("<form method='get'></form>");
-
             $eleForm.attr("action","/Tutorial/Homework/homework.zip");
-
             $(document.body).append($eleForm);
-
-            //提交表单，实现下载
             $eleForm.submit();
         });
 	</script>
