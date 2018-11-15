@@ -8,7 +8,7 @@
 		</title>
 		<style>
 			a{
-				padding-right:15%;
+				padding-right:20%;
 			}
 			h1{
 				color: #1EC391;
@@ -23,74 +23,157 @@
 				margin:0 auto;
 				padding-top:30px;
 			}
+			textarea{
+				height: 300px;
+				width:  100%;
+				resize: none;
+				border:thin;
+				border-color: yellow;
+			}
+			table{
+				width: 100%;
+			}
 
 		</style>
 	</head>
 	
 	<body>
-		<% response.setContentType("text/html;chartset=utf-8");%>
 		<div class = "Header">
-			<tr>
-				<header>
-						<td>
-							<a herf = "register.jsp" id = "register">
-								Register
-							</a>
-						</td>
-						<td>
-							<a herf = "login.jsp" id = "login">
-								Login
-							</a>
-						</td>
-						<td>
-							<a herf = "contact.jsp" id = "contact">
-								Contact
-							</a>
-						</td>
-						<td>
-							<a herf = "about.jsp" id = "about">
-								About
-							</a>
-						</td>
-						<td>
-							<a herf = "help.jsp" id = "help">
-								Help
-							</a>
-						</td>
-				</header>
+			<header>
+				<tr>
+					<td>
+						<img src="Material/Images/3.jpg" width=100%/><a href = "register.jsp" id = "register">
+							Register
+						</a>
+					</td>
+					<td>
+						<a href = "login.jsp" id = "login">
+							Login
+						</a>
+					</td>
+					<td>
+						<a href = "contact.jsp" id = "contact">
+							Contact
+						</a>
+					</td>
+					<td>
+						<a href = "about.jsp" id = "about">
+							About
+						</a>
+					</td>
+					<td>
+						<a href = "help.jsp" id = "help">
+							Help
+						</a>
+					</td>
 				</tr>
+			</header>
 		</div>
 		<div id = "title" align = "center">
 				<h1>
 					Sapling Student Education System
 				</h1>
 		</div>
-		<div id="bg">
-			<center>
-				<div id="sm">	<!--滚动div-->
-						<table>		<!--外表格1x2,且第2单元格是空的-->
-							<tr>
-								<td id="Pic1">
-									<table align="center">	<!--内表格1x9,存放9张图片-->
-										<tr>
-											<td><img src="Material/Images/1.jpg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-											<td><img src="Material/Images/2.jpg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-											<td><img src="Material/Images/1.jpg" onmouseover="mouseover(this)" onmouseout="mouseout(this)" align="absmiddle"/></td>
-											<td><img src="Material/Images/2.jpg"onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-											<td><img src="Material/Images/1.jpg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-											<td><img src="Material/Images/2.jpg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-											<td><img src="Material/Images/1.jpg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-											<td><img src="Material/Images/2.jpg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-										</tr>
-								   </table>
-							   </td>
-							<td id="Pic2"></td>
-							</tr>
-						</table>
-				</div>
+		<table>
+			<tr>
+				<td>
+					<div id="bg" style="width: 100%">
+						<div id="sm">	<!--滚动div-->
+							<table  align="left">		<!--外表格1x2,且第2单元格是空的-->
+								<tr>
+									<td id="Pic1">
+										<table>	<!--内表格1x9,存放9张图片-->
+											<tr>
+												<td><img src="Material/Images/1.jpg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+												<td><img src="Material/Images/2.jpg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+											</tr>
+										</table>
+									</td>
+									<td id="Pic2">
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<a href = "sapling.html">
+								习近平总书记来我校参观视察
+							</a>
+							<br/>
+							<a href = "sapling.html">
+								热烈庆祝第十三次校运会圆满成功
+							</a>
+							<br/>
+							<a href = "sapling.html">
+								秋风送爽，凌冬将至
+							</a>
+							<br/>
+							<a href = "sapling.html">
+								第十一届朗读比赛即将开赛
+							</a>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		
+		<table>
+			<center> 
+				<tr>
+					<td>
+						<a href = "Database.jsp"  id="handUp">
+							Hand up homework
+						</a>
+					</td>
+					<td>
+						<a href = "login.jsp" id = "login">
+							Query curriculum
+						</a>
+					</td>
+					<td>
+						<a href = "contact.jsp" id = "contact">
+							Query homework grades
+						</a>
+					</td>
+					<td>
+						<a href = "contact.jsp" id = "contact">
+							Query  grades
+						</a>
+					</td>
+					<td>
+						<a href = "about.jsp" id = "about">
+							Teacher attends
+						</a>
+					</td>
+				</tr>
 			</center>
+		</table>
+		<br/>
+		<div style="width: 100%;height: 300px;">
+			<table frame="void">
+				<tr>
+					<td width="60%" style="padding-right: 10%">
+						<textarea name="textarea">
+						</textarea>
+					</td>
+					<td width="30%">
+						<center>
+							<h2>
+								Parents opinion column
+							</h2>
+							<br/>
+							<button onClick="alert('Submit sucessed')">
+								Submit
+							</button>
+						</center>
+					</td>
+				</tr>
+			</table>
 		</div>
-	
 		<script>
 			Pic2.innerHTML=Pic1.innerHTML;//复制一组图片，但被隐藏
 			function scrolltoleft(){//定义向左移动的方法
